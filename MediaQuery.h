@@ -7,6 +7,8 @@ public:
 	static sf::VideoMode getCurrentVM();
 	static int screenWidth();
 	static int screenHeight();
+	static int centerX();
+	static int centerY();
 
 private:
 	MediaQuery();

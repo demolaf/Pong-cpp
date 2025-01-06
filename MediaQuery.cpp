@@ -9,7 +9,9 @@ MediaQuery MediaQuery::instance = MediaQuery();
 
 sf::VideoMode MediaQuery::getCurrentVM()
 {
-	return instance.currentVideoMode;
+	sf::VideoMode vm = instance.currentVideoMode;
+	printf("Video mode, Width: %d - Height: %d", vm.width, vm.height);
+	return vm;
 }
 
 int MediaQuery::screenWidth()
@@ -20,4 +22,14 @@ int MediaQuery::screenWidth()
 int MediaQuery::screenHeight()
 {
 	return instance.currentVideoMode.height;
+}
+
+int MediaQuery::centerX()
+{
+	return screenWidth() / 2;
+}
+
+int MediaQuery::centerY()
+{
+	return screenHeight() / 2;
 }
