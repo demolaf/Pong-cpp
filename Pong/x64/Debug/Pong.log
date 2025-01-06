@@ -1,0 +1,7 @@
+﻿  Bat.cpp
+C:\Users\ademolafadumo\source\repos\Pong\Bat.h(2,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Pong.cpp
+C:\Users\ademolafadumo\source\repos\Pong\Bat.h(2,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  MediaQuery.cpp
+C:\Users\ademolafadumo\source\repos\Pong\MediaQuery.h(2,10): error C1083: Cannot open include file: 'SFML/Graphics.hpp': No such file or directory
+  Generating Code...
