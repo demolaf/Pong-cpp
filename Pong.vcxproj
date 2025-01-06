@@ -190,6 +190,7 @@
     <ClCompile Include="Bat.cpp" />
     <ClCompile Include="Pong.cpp" />
     <ClCompile Include="MediaQuery.cpp" />
+    <ClCompile Include="UISizing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bat.h" />

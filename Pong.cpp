@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
 #include "MediaQuery.h"
+#include "UISizing.cpp"
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
 	int lives = 3;
 
 	// Create a bat at the bottom center of the screen
-	Bat bat(MediaQuery::centerX(), MediaQuery::screenHeight() - 20);
+	Bat bat(MediaQuery::centerX() - (UISizing::batWidth() / 2), MediaQuery::screenHeight() - 20);
 
 	// HUD
 	sf::Text hud;
@@ -31,10 +32,56 @@ int main()
 	while (window.isOpen())
 	{
 		// Handle the player input
+		sf::Event event;
+
+		while (window.pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+				// Quit the game when the window is closed
+				window.close();
+		}
+
+		// Handle the player quitting
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+		{
+			window.close();
+		}
+
+		// Handle the pressing and releasing of the arrow keys
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+		{
+			bat.moveLeft();
+		}
+		else 
+		{
+			bat.stopLeft();
+		}
+
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
+		{
+			bat.moveRight();
+		}
+		else
+		{
+			bat.stopRight();
+		}
 
 		// Update the bat, ball and HUD
 
+		// Update the delta time
+		sf::Time dt = clock.restart();
+		bat.update(dt);
+
+		// Update the HUD text
+		std::stringstream ss;
+		ss << "Score: " << score << " Lives: " << lives;
+		hud.setString(ss.str());
+
 		// Draw bat, ball and HUD
+		window.clear();
+		window.draw(hud);
+		window.draw(bat.getShape());
+		window.display();
 	}
 
 	return 0;

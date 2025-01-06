@@ -1,9 +1,11 @@
 #include "Bat.h"
+#include "MediaQuery.h"
+#include "UISizing.cpp"
 
 // this is the constructor and it's called when we instantiate the class
 Bat::Bat(float startX, float startY) : m_Position(startX, startY)
 {
-	m_Shape.setSize(sf::Vector2f(50, 5));
+	m_Shape.setSize(sf::Vector2f(UISizing::batWidth(), UISizing::batHeight()));
 	m_Shape.setPosition(m_Position);
 }
 

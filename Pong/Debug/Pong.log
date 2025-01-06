@@ -1,4 +1,6 @@
-﻿  MediaQuery.cpp
-  Pong.cpp
+﻿  Bat.cpp
+C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(7,36): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(11,37): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  MediaQuery.cpp
   Generating Code...
   Pong.vcxproj -> C:\Users\ademolafadumo\source\repos\Pong\Debug\Pong.exe
