@@ -10,4 +10,8 @@ public:
 	static float batHeight() {
 		return MediaQuery::screenHeight() * 0.013;
 	}
+
+	static float hudFontSize() {
+		return 0.039 * MediaQuery::screenWidth();
+	}
 };

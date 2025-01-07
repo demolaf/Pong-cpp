@@ -13,7 +13,9 @@ int main()
 	int lives = 3;
 
 	// Create a bat at the bottom center of the screen
-	Bat bat(MediaQuery::centerX() - (UISizing::batWidth() / 2), MediaQuery::screenHeight() - 20);
+	double batBottomMargin = 0.0185 * MediaQuery::screenHeight();
+	int batCenterOrigin = UISizing::batWidth() / 2;
+	Bat bat(MediaQuery::centerX() - batCenterOrigin, MediaQuery::screenHeight() - batBottomMargin);
 
 	// HUD
 	sf::Text hud;
@@ -22,9 +24,9 @@ int main()
 	sf::Font font;
 	font.loadFromFile("fonts/DS-DIGIT.ttf");
 	hud.setFont(font);
-	hud.setCharacterSize(75);
+	hud.setCharacterSize(UISizing::hudFontSize());
 	hud.setFillColor(sf::Color::White);
-	hud.setPosition(20, 20);
+	hud.setPosition(0.0104 * MediaQuery::screenWidth(), 0.0185 * MediaQuery::screenHeight());
 
 	// Game loop clock
 	sf::Clock clock;
