@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 #include "MediaQuery.h"
 #include "UISizing.cpp"
-
+#include "Ball.h"
 
 int main()
 {
@@ -17,6 +17,10 @@ int main()
 	double batBottomMargin = 0.0185 * MediaQuery::screenHeight();
 	int batCenterOrigin = UISizing::batWidth() / 2;
 	Bat bat(MediaQuery::centerX() - batCenterOrigin, MediaQuery::screenHeight() - batBottomMargin);
+
+	// Create a ball
+	double ballCenterOrigin = UISizing::ballSize() / 2;
+	Ball ball(MediaQuery::centerX() - ballCenterOrigin, 0);
 
 	// HUD
 	sf::Text hud;
@@ -74,6 +78,7 @@ int main()
 		// Update the delta time
 		sf::Time dt = clock.restart();
 		bat.update(dt);
+		ball.update(dt);
 
 		// Update the HUD text
 		std::stringstream ss;
@@ -84,6 +89,7 @@ int main()
 		window.clear();
 		window.draw(hud);
 		window.draw(bat.getShape());
+		window.draw(ball.getShape());
 		window.display();
 	}
 

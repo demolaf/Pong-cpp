@@ -14,4 +14,8 @@ public:
 	static float hudFontSize() {
 		return 0.039 * MediaQuery::screenWidth();
 	}
+
+	static float ballSize() {
+		return 0.0052 * MediaQuery::screenWidth();
+	}
 };

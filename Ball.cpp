@@ -1,8 +1,9 @@
 #include "Ball.h"
+#include "UISizing.cpp"
 
 Ball::Ball(float startX, float startY) : m_Position(startX, startY)
 {
-	m_Shape.setSize(sf::Vector2f(10, 10));
+	m_Shape.setSize(sf::Vector2f(UISizing::ballSize(), UISizing::ballSize()));
 	m_Shape.setPosition(m_Position);
 }
 
@@ -43,7 +44,7 @@ void Ball::reboundBatOrTop()
 void Ball::reboundBottom()
 {
 	m_Position.y = 0;
-	m_Position.x = 500;
+	m_Position.x = MediaQuery::centerX();
 	m_DirectionY = -m_DirectionY;
 }
 
