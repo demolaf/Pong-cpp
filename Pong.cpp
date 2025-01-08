@@ -5,6 +5,7 @@
 #include "MediaQuery.h"
 #include "UISizing.cpp"
 
+
 int main()
 {
 	sf::RenderWindow window(MediaQuery::getCurrentVM(), "Pong", sf::Style::Fullscreen);

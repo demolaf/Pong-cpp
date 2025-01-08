@@ -1,11 +1,5 @@
-﻿  Pong.cpp
+﻿  UISizing.cpp
 C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(7,36): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(11,37): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(15,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(17,22): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(18,78): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(18,32): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(27,44): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(29,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(29,25): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   Pong.vcxproj -> C:\Users\ademolafadumo\source\repos\Pong\Debug\Pong.exe

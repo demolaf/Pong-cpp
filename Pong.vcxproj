@@ -187,12 +187,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Bat.cpp" />
     <ClCompile Include="Pong.cpp" />
     <ClCompile Include="MediaQuery.cpp" />
     <ClCompile Include="UISizing.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ball.h" />
     <ClInclude Include="Bat.h" />
     <ClInclude Include="MediaQuery.h" />
   </ItemGroup>
