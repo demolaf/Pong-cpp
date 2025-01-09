@@ -16,6 +16,6 @@ public:
 	}
 
 	static float ballSize() {
-		return 0.0052 * MediaQuery::screenWidth();
+		return 0.0026 * MediaQuery::screenWidth();
 	}
 };

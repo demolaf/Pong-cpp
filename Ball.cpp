@@ -3,7 +3,7 @@
 
 Ball::Ball(float startX, float startY) : m_Position(startX, startY)
 {
-	m_Shape.setSize(sf::Vector2f(UISizing::ballSize(), UISizing::ballSize()));
+	m_Shape.setRadius(UISizing::ballSize());
 	m_Shape.setPosition(m_Position);
 }
 
@@ -12,7 +12,7 @@ sf::FloatRect Ball::getPosition()
 	return m_Shape.getGlobalBounds();
 }
 
-sf::RectangleShape Ball::getShape()
+sf::CircleShape Ball::getShape()
 {
 	return m_Shape;
 }
