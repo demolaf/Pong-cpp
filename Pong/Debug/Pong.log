@@ -1,4 +1,14 @@
-﻿  Pong.cpp
+﻿  Ball.cpp
+C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(7,36): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(11,37): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(15,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(19,17): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+C:\Users\ademolafadumo\source\repos\Pong\Ball.cpp(47,36): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+C:\Users\ademolafadumo\source\repos\Pong\Ball.cpp(47,36): warning C4244:         with
+C:\Users\ademolafadumo\source\repos\Pong\Ball.cpp(47,36): warning C4244:         [
+C:\Users\ademolafadumo\source\repos\Pong\Ball.cpp(47,36): warning C4244:             T=float
+C:\Users\ademolafadumo\source\repos\Pong\Ball.cpp(47,36): warning C4244:         ]
+  Pong.cpp
 C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(7,36): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(11,37): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 C:\Users\ademolafadumo\source\repos\Pong\UISizing.cpp(15,16): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
@@ -10,4 +20,5 @@ C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(45,34): warning C4244: 'argume
 C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(54,44): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
 C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(56,61): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 C:\Users\ademolafadumo\source\repos\Pong\Pong.cpp(56,25): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
   Pong.vcxproj -> C:\Users\ademolafadumo\source\repos\Pong\Debug\Pong.exe
