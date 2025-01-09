@@ -36,7 +36,7 @@ void Ball::reboundSides()
 // direction in which the ball is traveling(vertically)
 void Ball::reboundBatOrTop()
 {
-	m_DirectionY = -m_DirectionX;
+	m_DirectionY = -m_DirectionY;
 }
 
 // The reboundBottom function repositions the ball at the top center of the screen and sends it downward.
